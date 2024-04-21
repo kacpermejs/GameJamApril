@@ -42,7 +42,7 @@ public class SubmarineController : MonoBehaviour {
     _rb.AddForceAtPosition(Vector2.up * _buoyancyForceMagnitude * -_rearTankFill, _rearTankTransform.position);
 
     //throttle
-    _rb.AddForce(Vector2.right * _throttle * _throttleForceMagnitude);
+    _rb.AddForce(transform.right * _throttle * _throttleForceMagnitude);
 
   }
 
