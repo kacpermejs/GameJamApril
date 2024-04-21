@@ -27,12 +27,19 @@ public class PlayerInput : MonoBehaviour {
   private InputActionReference tilt;
   [SerializeField]
   private InputActionReference elevation;
+  
+  [SerializeField]
+  private InputActionReference level;
 
   private SubmarineController controller;
 
   private void Awake() {
     controller = GetComponent<SubmarineController>();
     _currentStep = _initialStep;
+  }
+
+  private void Start() {
+    level.action.performed += HandleLevel;
   }
 
   private void Update() {
@@ -89,6 +96,9 @@ public class PlayerInput : MonoBehaviour {
     }
   }
 
+  void HandleLevel(InputAction.CallbackContext context) {
+    controller.Level();
+  }
 
 }
 
