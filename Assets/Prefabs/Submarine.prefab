@@ -1461,7 +1461,7 @@ GameObject:
   - component: {fileID: 3976477145424258086}
   m_Layer: 3
   m_Name: Submarine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1501,9 +1501,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1340b1be76623b408c3ad20fc78d565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defaultBuoyancy: 108.1
-  _buoyancyForceMagnitude: 10
-  _throttleForceMagnitude: 25
+  _defaultBuoyancy: 0
+  _buoyancyForceMagnitude: 147.15
+  _throttleForceMagnitude: 100
   _throttle: 0
   _frontTankFill: 0.5
   _rearTankFill: 0.5
@@ -1605,7 +1605,7 @@ DistanceJoint2D:
   m_GameObject: {fileID: 8650308320143880973}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity

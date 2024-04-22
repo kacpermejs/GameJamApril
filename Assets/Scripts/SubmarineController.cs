@@ -37,7 +37,7 @@ public class SubmarineController : MonoBehaviour {
   private void FixedUpdate() {
 
     //buoyancy
-    _rb.AddForce(Vector2.up * _defaultBuoyancy);
+    //_rb.AddForce(Vector2.up * _defaultBuoyancy);
 
     //front
     _rb.AddForceAtPosition(Vector2.up * _buoyancyForceMagnitude * -_frontTankFill, _frontTankTransform.position);
