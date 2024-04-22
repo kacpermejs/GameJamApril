@@ -29,4 +29,7 @@ public class Projectile : MonoBehaviour {
   private void OnCollisionEnter2D(Collision2D collision) {
     doArrowPhysics = false;
   }
+  private void OnTriggerEnter2D(Collider2D collision) {
+    doArrowPhysics = false;
+  }
 }

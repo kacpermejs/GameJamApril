@@ -10,12 +10,10 @@ class Shooter : MonoBehaviour {
   public bool loadImmediately = false;
 
   [SerializeField]
-  private InputActionReference shootActionReference;
-  [SerializeField]
   private Transform _projectileHandler;
 
   private void Start() {
-    shootActionReference.action.performed += Shoot;
+    
     if (loadImmediately) {
       Load();
     }
@@ -25,18 +23,22 @@ class Shooter : MonoBehaviour {
     projectileInstance = Instantiate(projectile, transform);
   }
 
-  public void Shoot(InputAction.CallbackContext context) {
+  public Projectile Shoot() {
     if (projectileInstance == null) {
-      return;
+      return null;
     }
     // unparent
     projectileInstance.transform.parent = _projectileHandler;
     projectileInstance.Launch();
     // forget
+    var passedProjectile = projectileInstance;
     projectileInstance = null;
     if (loadImmediately) {
       Load();
     }
+    return passedProjectile;
   }
+
+  public bool IsLoaded { get { return projectileInstance != null; } }
 }
 
