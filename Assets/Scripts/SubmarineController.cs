@@ -26,6 +26,10 @@ public class SubmarineController : MonoBehaviour {
 
   private Rigidbody2D _rb;
 
+  public float Throttle { get => _throttle; }
+  public float FrontTankFill { get => _frontTankFill; }
+  public float RearTankFill { get => _rearTankFill; }
+
   private void Awake() {
     _rb = GetComponent<Rigidbody2D>();
   }
