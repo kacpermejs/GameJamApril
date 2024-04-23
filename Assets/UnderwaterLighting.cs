@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-[RequireComponent(typeof(Light2D))]
 public class UnderwaterLighting : MonoBehaviour
 {
   public AnimationCurve intensityCurve; // Editable curve for intensity variation
@@ -13,10 +12,13 @@ public class UnderwaterLighting : MonoBehaviour
 
   public Transform playerTransform; // Reference to the player's transform
 
+  [SerializeField]
   private Light2D globalLight; // Reference to the directional light
 
   private void Awake() {
-    globalLight = GetComponent<Light2D>();
+    if (globalLight == null) {
+      throw new System.ArgumentNullException("Setup global light in the inspector");
+    }
   }
 
   void Update() {
