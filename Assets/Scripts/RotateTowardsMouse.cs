@@ -16,7 +16,7 @@ public class RotateTowardsMouse : MonoBehaviour {
     plane = new Plane(Vector3.forward, transform.position.z);
   }
 
-  void Update() {
+  private void LateUpdate() {
     // Get the direction from the object's position to the mouse position
 
     screenPosition = Input.mousePosition;
