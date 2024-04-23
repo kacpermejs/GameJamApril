@@ -3,21 +3,35 @@
 public class RotateTowardsMouse : MonoBehaviour {
 
   private Camera mainCamera;
+  
+  private Vector3 screenPosition;
+  private Vector3 worldPosition;
+  private Vector3 direction;
+
+  private Plane plane;
 
   private void Awake() {
     mainCamera = Camera.main;
+
+    plane = new Plane(Vector3.forward, transform.position.z);
   }
 
   void Update() {
     // Get the direction from the object's position to the mouse position
-    Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-    Vector3 direction = mousePosition - transform.position;
-    direction.z = 0f; // Ensure the object stays in the 2D plane
 
-    // Calculate the angle in degrees
+    screenPosition = Input.mousePosition;
+    Ray ray = mainCamera.ScreenPointToRay(screenPosition);
+    if(plane.Raycast(ray, out float distance)) {
+      worldPosition = ray.GetPoint(distance);
+    }
+
+    direction = worldPosition - transform.position;
     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-    // Rotate the object towards the mouse
     transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+  }
+
+  private void OnDrawGizmos() {
+    Gizmos.color = Color.red;
+    Gizmos.DrawSphere(worldPosition, 0.5f);
   }
 }
