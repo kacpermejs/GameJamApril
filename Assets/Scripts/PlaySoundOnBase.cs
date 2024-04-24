@@ -6,14 +6,9 @@ public abstract class PlaySoundOnBase : MonoBehaviour
   public float cooldownTime = 1f;
   public float volume = 1f;
 
-  private AudioSource audioSource;
   private bool canPlaySound = true;
 
   [SerializeField] private AudioClip[] clips;
-
-  private void Awake() {
-    audioSource = GetComponent<AudioSource>();
-  }
 
   public void Play() {
     if (canPlaySound) {
