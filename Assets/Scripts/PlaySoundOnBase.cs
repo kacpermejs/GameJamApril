@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public abstract class PlaySoundOnBase : MonoBehaviour
 {
   public float cooldownTime = 1f;
-  public float startTime = 0f;
+  public float volume = 1f;
 
   private AudioSource audioSource;
   private bool canPlaySound = true;
 
+  [SerializeField] private AudioClip[] clips;
 
   private void Awake() {
     audioSource = GetComponent<AudioSource>();
@@ -17,8 +17,7 @@ public abstract class PlaySoundOnBase : MonoBehaviour
 
   public void Play() {
     if (canPlaySound) {
-      audioSource.time = startTime;
-      audioSource.Play();
+      SoundFXManager.instance.PlayRandomAudioClip(clips, transform, volume);
 
       canPlaySound = false;
       StartCoroutine(CooldownCoroutine());

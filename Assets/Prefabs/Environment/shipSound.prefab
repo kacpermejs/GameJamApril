@@ -47,8 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66f5923af1cc3e42832ee8b7c014111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 8300000, guid: fe015fbb505a2cf4f957fb982e2a3c37, type: 3}
   cooldownTime: 10
+  volume: 0.29
+  clips:
+  - {fileID: 8300000, guid: fe015fbb505a2cf4f957fb982e2a3c37, type: 3}
 --- !u!61 &7018721771716921925
 BoxCollider2D:
   m_ObjectHideFlags: 0
