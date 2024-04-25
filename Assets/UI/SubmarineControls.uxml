@@ -1,15 +1,23 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/SubmarineControls.uss?fileID=7433441132597879392&amp;guid=f0a6c45ac8b83ea45844b81af3d487b1&amp;type=3#SubmarineControls" />
     <ui:VisualElement name="Screen" style="flex-grow: 1; align-items: flex-start; flex-direction: column-reverse; justify-content: flex-start; align-self: auto;">
-        <ui:VisualElement name="Controls" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-self: stretch;">
-            <ui:VisualElement name="SubmarineGizmo" class="container" style="flex-grow: 0; align-items: center; align-self: flex-end;">
+        <ui:VisualElement name="Controls" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: stretch;">
+            <ui:VisualElement name="SubmarineGizmo" class="container" style="flex-grow: 0; align-items: center; align-self: flex-start;">
                 <ui:Label tabindex="-1" text="Water tanks" class="label" />
                 <ui:VisualElement name="TankFill" style="flex-grow: 0; flex-direction: row; align-items: flex-start; flex-wrap: nowrap; align-self: stretch; justify-content: space-around;">
                     <ui:ProgressBar value="0.5" name="RearTankBar" high-value="1" class="tank-fill-bar" />
                     <ui:ProgressBar value="0.5" name="FrontTankBar" high-value="1" class="tank-fill-bar" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="Throttle" class="container">
+            <ui:VisualElement name="Collectibles" style="flex-grow: 1; align-items: center; flex-direction: column; align-self: flex-start; justify-content: center;">
+                <ui:Label tabindex="-1" text="Collectibles:" parse-escape-sequences="true" display-tooltip-when-elided="true" class="cLabel" />
+                <ui:VisualElement name="container" style="flex-grow: 0; flex-direction: row; align-self: auto; align-items: center; justify-content: space-around; width: 100px;">
+                    <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Collected" class="cLabel" />
+                    <ui:Label tabindex="-1" text="of" parse-escape-sequences="true" display-tooltip-when-elided="true" name="of" class="cLabel" />
+                    <ui:Label tabindex="-1" text="6" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Total" class="cLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Throttle" class="container" style="align-self: flex-start;">
                 <ui:Label tabindex="-1" text="Throttle" class="label" />
                 <ui:ProgressBar value="1" high-value="2" name="ThrottleBar" low-value="0" style="width: 90%; height: 20px; margin-top: 8px; margin-right: 0; margin-bottom: 0; margin-left: 0;">
                     <ui:VisualElement name="MiddleIndicator" style="position: absolute; left: 48%; height: 12px; width: 2px; background-color: rgb(255, 2, 1); top: 3px;" />

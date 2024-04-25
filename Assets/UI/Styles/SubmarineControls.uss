@@ -25,3 +25,11 @@
     height: 90px;
     align-items: center;
 }
+
+.cLabel {
+    -unity-font-style: bold;
+    color: rgb(0, 180, 19);
+    -unity-text-outline-width: 0.5px;
+    -unity-text-outline-color: rgb(255, 255, 255);
+    font-size: 25px;
+}

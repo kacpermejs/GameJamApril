@@ -65,8 +65,8 @@ public class SubmarineController : MonoBehaviour {
   }
 
   public void Level() {
-    float combinedFill = (_frontTankFill + _rearTankFill) / 2f;
-    _frontTankFill = combinedFill;
-    _rearTankFill = combinedFill;
+    //float combinedFill = (_frontTankFill + _rearTankFill) / 2f;
+    _frontTankFill = 0.5f;
+    _rearTankFill = 0.5f;
   }
 }
