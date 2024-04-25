@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8859790105161065143}
   - component: {fileID: 1428275682719055283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LightCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 56365119079992965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.13}
   m_LocalScale: {x: 0.22, y: 0.1232, z: 0.44}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.4528302, g: 0.16019936, b: 0.16870765, a: 1}
   m_FlipX: 0
@@ -301,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2794944507081866509}
   - component: {fileID: 5776764236146345267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UniformLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.499
   m_Color: {r: 0.79607844, g: 1, b: 1, a: 1}
-  m_Intensity: 0.1
+  m_Intensity: 0.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: fbbfbebde30dd89f00000000
@@ -383,7 +383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2401082807534713043}
   - component: {fileID: 1387436573878221955}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Motor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634787769685889778}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tanks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5734164787355041449}
   - component: {fileID: 5605059230517028791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3967140737782553901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6284106313677559385}
   - component: {fileID: 5321408233440609754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4138818464570314145}
   - component: {fileID: 1554050369333116980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8163704143998347118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Post
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3471145962262029884}
   - component: {fileID: 123408829860578557}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 8822911166624148376}
   - component: {fileID: 8644350820847627996}
   - component: {fileID: 8170421204638471930}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4819791173505568635}
   - component: {fileID: 7756419490437793355}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7442897217971985390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1156,7 +1156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2245141931984232839}
   - component: {fileID: 3201669397262465761}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5130401797567869984}
   - component: {fileID: 3564098188520869075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1324,7 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4064658733017520925}
   - component: {fileID: 8690012752037854227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,8 +1408,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1611305742491426624}
   - component: {fileID: 5655816772647485538}
-  m_Layer: 0
-  m_Name: RotatingLight
+  - component: {fileID: 659032642993536581}
+  - component: {fileID: 8504913890570627414}
+  - component: {fileID: 6320756442887987798}
+  m_Layer: 3
+  m_Name: RotatingLightAndCollector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1444,6 +1447,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6d4c89aa957cf4ba38d72ce82aa948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &659032642993536581
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658658650677225916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.2079427, y: -0.012685955}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.207621, y: 0.6362604}
+  m_EdgeRadius: 0
+--- !u!114 &8504913890570627414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658658650677225916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf30933e9f7554f882d0a799d60113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onConsume:
+    m_PersistentCalls:
+      m_Calls: []
+  includeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!114 &6320756442887987798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658658650677225916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 26b9b03a047400848b7255d55863df59, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b9c17102-6cd2-49cd-9ca2-fe29980b315c
+    m_ActionName: Actions/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 25a5b3f0-bb78-4c06-aa3b-7518993882c3
+    m_ActionName: Actions/Retract[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 75e9fdc5-fdfb-43b4-90b6-a66df1b90afe
+    m_ActionName: Actions/TightenTheLine[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9ecaf69f-034a-4c02-be41-e64c2b6cc18d
+    m_ActionName: Actions/LooseTheLine[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8504913890570627414}
+        m_TargetAssemblyTypeName: Collector, Assembly-CSharp
+        m_MethodName: HandleCollectAction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ff0fb41f-8edd-44ed-b7db-3625d662b343
+    m_ActionName: Actions/Collect[/Keyboard/e]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Actions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8650308320143880973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _defaultBuoyancy: 0
   _buoyancyForceMagnitude: 147.15
-  _throttleForceMagnitude: 100
+  _throttleForceMagnitude: 300
   _throttle: 0
   _frontTankFill: 0.5
   _rearTankFill: 0.5
@@ -1643,7 +1771,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3667927294185033831}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2bf1f1a2-97e2-46dc-82e9-9dcce7955516
     m_ActionName: Movement/Throttle[/Keyboard/s,/Keyboard/w]
   - m_PersistentCalls:
@@ -1702,8 +1842,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 0.1
-  volume: 1
-  clips: []
+  volume: 0.2
+  clips:
+  - {fileID: 8300000, guid: bad92baa90ba17e4090f02bfe310d35d, type: 3}
+  - {fileID: 8300000, guid: b8d0ad5b52d182c478363b4abfe9238f, type: 3}
+  - {fileID: 8300000, guid: 8acdec5718a1e344e9bf2214f557b11e, type: 3}
 --- !u!1 &8689630489376259942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3524276410535920646}
   - component: {fileID: 5962249895333771342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5166162098497420480}
   - component: {fileID: 5592398217704790962}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

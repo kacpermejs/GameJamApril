@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public abstract class PlaySoundOnBase : MonoBehaviour
+public class PlaySoundWithCooldown : MonoBehaviour
 {
   public float cooldownTime = 1f;
   public float volume = 1f;
